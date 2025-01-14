@@ -1,18 +1,48 @@
 {
-	"color_scheme": "light",
-	"syntax_theme": "native",
-	"notebook": {
-    		"expand": false,
-    		"always_show_tab_bar": true,
-    		"show_cell_borders": false
-  		},
- 	"console": {
-    		"color_scheme": "default",
-    		"syntax_theme": "dracula"
-  		},
-  	"preview": {
-    		"show_cell_borders": true
-  		},
-  	"edit_mode": "vim"
-
+  "color_scheme": "default",
+  "syntax_theme": "nord-darker",
+  "notebook": {
+    "expand": true,
+    "always_show_tab_bar": true,
+    "show_cell_borders": true,
+    "line_numbers": false,
+    "background_pattern": 4,
+    "color_scheme": "default",
+    "autoinspect": false,
+    "autoformat": true,
+    "autosuggest": false,
+    "autocomplete": true,
+    "enable_language_servers": true
+  },
+  "console": {
+    "color_scheme": "default",
+    "syntax_theme": "nord-darker"
+  },
+  "preview": {
+    "show_cell_borders": true
+  },
+  "edit_mode": "vi",
+  "formatters": [
+    {
+      "command": [
+        "ruff",
+        "format",
+        "-"
+      ],
+      "languages": [
+        "python"
+      ]
+    }
+  ],
+  "language_servers": {
+    "ruff": {
+      "command": [
+        "ruff-lsp"
+      ],
+      "languages": [
+        "python"
+      ]
+    }
+  },
+  "graphics": "kitty"
 }
