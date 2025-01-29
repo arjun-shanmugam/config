@@ -34,15 +34,6 @@
       ]
     }
   ],
-  "language_servers": {
-    "ruff": {
-      "command": [
-        "ruff-lsp"
-      ],
-      "languages": [
-        "python"
-      ]
-    }
-  },
-  "graphics": "kitty"
+ "language_servers": { "ruff": { "command": [ "ruff", "server" ], "languages": [ "python" ] } },
+    "graphics": "kitty"
 }
